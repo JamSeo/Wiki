@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>DETAIL</h1>
+  <h2>{{ article.pk }}번째 글</h2>
+  <a href="{% url 'articles:index' %}">
+    <input type="button" value="뒤로가기">
+  </a>
+  <hr>
+  <div>
+    {% if article.image %}
+      <img style="width: 250px" src="{{article.image.url}}" alt="{{article.image}}">
+    {% endif %}
+  </div>
+  <p>제목: {{article.title}}</p>
+  <p>내용: {{article.content}}</p>
+  <p>작성시간: {{article.created_at}}</p>
+  <p>수정시간: {{article.updated_at}}</p>
+  <hr>
+  {% comment %} <a href="{% url 'articles:update' article.pk %}">[edit]</a> {% endcomment %}
+  <div style="display: flex;">
+    <a href="{% url 'articles:update' article.pk %}">
+      <input type="button" value="edit">
+    </a>
+
+    <form action="{% url 'articles:delete' article.pk %}" method="POST">
+      {% csrf_token %}
+      <input type="submit" value="delete">
+    </form>
+ </div>
+{% endblock content %}

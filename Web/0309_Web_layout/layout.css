@@ -1,0 +1,28 @@
+body {
+    margin: 0px;
+}
+
+.header {
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.section-left {
+    width: 30%;
+    height: 500px;
+    background-color: bisque;
+    float: left;
+}
+
+.section-right {
+    width: 60%;
+    height: 500px;
+    background-color: skyblue;
+    float: left;
+}
+
+.footer {
+    clear: both;
+    height: 100px;
+    background-color: yellowgreen;
+}

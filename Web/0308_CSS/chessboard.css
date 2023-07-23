@@ -1,0 +1,20 @@
+.chessboard {
+    width: 800px;
+    height: 800px;
+    border: 2px solid black;
+    font-size: 0px;
+}
+
+.cell {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+.white {
+    background-color: white;
+}
+
+.black {
+    background-color: black;
+}

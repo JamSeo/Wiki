@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: cadetblue;
+    height: 300px;
+}
+
+.item {
+    background-color: tan;
+    border: 1px solid black;
+    font-size: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.small {
+    font-size: 30px
+}
+
+.big {
+    font-size: 50px;
+}

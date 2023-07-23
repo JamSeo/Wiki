@@ -1,0 +1,36 @@
+.container-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+
+    width: 90vw;
+    height: 40vw;
+    background-color: black;
+
+}   
+
+.item {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    margin: 5px;
+
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+}
+
+.map {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin: 5px;
+
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+    
+}

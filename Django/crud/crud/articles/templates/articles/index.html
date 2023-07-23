@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>뉴진스 갤러리</h1>
+
+  {% if user.is_authenticated %}
+      <h3>Hello, {{ user }}</h3>
+      <form action="{% url 'accounts:logout' %}" method="POST">
+        {% csrf_token %}
+        <input type="submit" value="Logout">
+      </form>    
+    <a href="{% url 'articles:create' %}">
+      <button>새글작성</button>
+    </a>
+
+    <hr>
+    {% for article in articles %}
+      <p><a href="{% url 'articles:detail' article.pk %}">번호: {{ article.pk }}</a></p>
+      <p>제목: {{ article.title }}</p>
+      <p>내용: {{ article.content }}</p>
+      <hr>
+      {% empty %}
+        <h2>게시글이 없습니다</h2>
+      <hr>
+  {% endfor %}
+
+  {% else %}
+    <h3>Hey, you need to Sign in!</h3>
+    <form action="{% url 'accounts:login' %}" method="POST">
+      {% csrf_token %}
+      <input type="submit" value="Login">
+    </form>
+
+  {% endif %}
+{% endblock content %}
