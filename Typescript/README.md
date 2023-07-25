@@ -1,7 +1,7 @@
 # Typescript
 ### JAM'S Typescript 낙서장
 
-### 🍯 Come and Look around!
+### 🍯 Come and Have a look!
 01. [Typescript 설치 셋팅(Vue, React 포함)](./TIL/TIL_230722.md/#1-typescript-설치-셋팅vue-react-포함)  
 02. [Typescript 컴파일 시 세부설정(tsconfig.json)](./TIL/TIL_230722.md/#2-typescript-컴파일-시-세부설정tsconfigjson)
 03. [Type 지정 방법](./TIL/TIL_230723.md/#1-type-지정-방법)
