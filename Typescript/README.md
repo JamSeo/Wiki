@@ -12,3 +12,4 @@
 6.  [타입 확정하기 Narrowing & Assertion](./TIL/TIL_230724.md/#타입-확정하기-narrowing--assertion)
 7.  [타입 변수에 담아 쓰기](./TIL/TIL_230724.md/#타입-변수에-담아-쓰기)
 8.  [타입스크립트로 HTML 변경과 조작할 때 주의점](./TIL/TIL_230727.md/#타입스크립트로-html-변경과-조작할-때-주의점)
+9.  [(JS 문법시간) prototype 문법 짚어보기](./TIL/TIL_230728.md/#js-문법시간-prototype-문법-짚어보기)
