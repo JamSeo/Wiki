@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
+
+<script>
+    
+  function 부모() {
+    this.q = "strike";
+    this.w = "snowball";
+  }
+
+  부모.prototype.name = "kim";
+
+  var 자식 = new 부모();
+
+  console.log(자식);      // 부모 {q: 'strike', w: 'snowball'}
+  console.log(자식.name)  // kim
+
+</script>
