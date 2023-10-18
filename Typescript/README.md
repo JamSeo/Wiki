@@ -16,3 +16,4 @@
 10. [class 만들 때 타입지정 가능](./TIL/TIL_230801.md/#class-만들-때-타입지정-가능)
 11. [object에 타입지정는 것 중에 interface도 있음](./TIL/TIL_230801.md/#object에-타입지정는-것-중에-interface도-있음)
 12. [Narrowing 할 수 있는 방법 더 알아보기](./TIL/TIL_230809.md/#narrowing-할-수-있는-방법-더-알아보기)
+13. [array 자료에 붙일 수 있는 tuple type](./TIL/TIL_231012.md/#array-자료에-붙일-수-있는-tuple-type)
