@@ -1,6 +1,5 @@
 import sys
 from copy import deepcopy
-
 # 재귀 깊이 limit 설정 (nodeinfo의 길이가 1 이상 10,000 이하이므로!!!)
 sys.setrecursionlimit(10**4)
 
@@ -58,8 +57,3 @@ def solution(nodeinfo):
     postorder(deepcopy(nodeinfo), postanswer)
 
     return [preanswer, postanswer]
-
-
-print(
-    solution([[5, 3], [11, 5], [13, 3], [3, 5], [6, 1], [1, 3], [8, 6], [7, 2], [2, 2]])
-)
